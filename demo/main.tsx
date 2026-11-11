@@ -48,7 +48,7 @@ function App() {
       </section>
       <section className="notes"><div><p className="eyebrow">Use it in your project</p><h2>Your artwork.<br />The same interaction.</h2><p>Copy the component and stylesheet into a React project, then pass in your image. No animation library needed.</p><a href={`${repository}#usage`}>Read the setup guide <span aria-hidden="true">↗</span></a></div><pre><code>{`<Nanites\n  src="/your-logo.svg"\n  alt="Your brand"\n  width={1000}\n  height={190}\n/>`}</code></pre></section>
     </main>
-    <footer><span>Originally made for Plainsight.</span><a href={`${repository}/blob/main/LICENSE`}>Code licensed under MIT</a></footer>
+    <footer><span>React · Canvas 2D</span><a href={`${repository}/blob/main/LICENSE`}>Code licensed under MIT</a></footer>
   </>;
 }
 createRoot(document.getElementById('root')!).render(<StrictMode><App /></StrictMode>);

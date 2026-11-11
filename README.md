@@ -1,6 +1,6 @@
 # Nanites
 
-Move your cursor across an image to scatter its fragments into particles. They drift briefly, then spring back into place. Originally built for the Plainsight website.
+Move your cursor across an image to scatter its fragments into particles. They drift briefly, then spring back into place.
 
 A small React component using Canvas 2D. No animation library, backend, account or API key required.
 
@@ -13,7 +13,7 @@ npm ci
 npm run dev
 ```
 
-The demo uses the Cayo logo from the portfolio and a local image picker. Selected images stay in the browser; there is no upload endpoint or analytics. Transparent PNG, SVG and WebP files work best. The picker accepts images up to 5 MB, with aspect ratios from 1:2 to 20:1.
+The demo includes the Cayo logo and a local image picker. Selected images stay in the browser; there is no upload endpoint or analytics. Transparent PNG, SVG and WebP files work best. The picker accepts images up to 5 MB, with aspect ratios from 1:2 to 20:1.
 
 ## Usage
 
