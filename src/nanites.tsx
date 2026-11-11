@@ -17,7 +17,7 @@ const drift = (time: number, seed: number) => {
   return hash(cell) + (hash(cell + 1) - hash(cell)) * smooth(time - cell);
 };
 
-export type ParticleLogoProps = {
+export type NanitesProps = {
   /** Transparent, same-origin artwork works best. */
   src: string;
   alt: string;
@@ -27,7 +27,7 @@ export type ParticleLogoProps = {
   disabled?: boolean;
 };
 
-export function ParticleLogo({ src, alt, width, height, className = '', disabled = false }: ParticleLogoProps) {
+export function Nanites({ src, alt, width, height, className = '', disabled = false }: NanitesProps) {
   const linkRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -328,9 +328,9 @@ export function ParticleLogo({ src, alt, width, height, className = '', disabled
   }, [src, width, height, disabled]);
 
   return (
-    <div ref={linkRef} className={`particle-logo ${className}`}>
+    <div ref={linkRef} className={`nanites ${className}`}>
       <img ref={imageRef} src={src} width={width} height={height} alt={alt} decoding="async" />
-      <canvas ref={canvasRef} className="particle-logo-canvas" aria-hidden="true" />
+      <canvas ref={canvasRef} className="nanites-canvas" aria-hidden="true" />
     </div>
   );
 }

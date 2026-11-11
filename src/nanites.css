@@ -1,0 +1,7 @@
+.nanites { position: relative; display: block; padding-block: clamp(32px, 6vw, 80px); }
+.nanites img { display: block; width: 100%; height: auto; }
+.nanites-canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .nanites img { opacity: 1 !important; }
+  .nanites-canvas { display: none; }
+}

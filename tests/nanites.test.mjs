@@ -3,7 +3,7 @@ import { runInNewContext } from 'node:vm';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import ts from 'typescript';
-const code = ts.transpileModule(readFileSync(new URL('../src/particle-logo.tsx', import.meta.url), 'utf8'), {
+const code = ts.transpileModule(readFileSync(new URL('../src/nanites.tsx', import.meta.url), 'utf8'), {
   compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.ReactJSX, esModuleInterop: true },
 }).outputText;
 function mount({ reduced = false, fine = true, fail = false } = {}) {
@@ -38,7 +38,7 @@ function mount({ reduced = false, fine = true, fail = false } = {}) {
   performance: { now: () => now }, requestAnimationFrame: fn => { rafs.set(++id, fn); return id; }, cancelAnimationFrame: n => rafs.delete(n),
   IntersectionObserver: class { constructor(fn) { intersection = fn; } observe() {} disconnect() {} },
   ResizeObserver: class { constructor(fn) { resize = fn; } observe() {} disconnect() {} } });
-  exports.ParticleLogo({ src: '/sample.svg', alt: 'Sample', width: 900, height: 194 });
+  exports.Nanites({ src: '/sample.svg', alt: 'Sample', width: 900, height: 194 });
   const cleanup = effect();
   intersection([{ isIntersecting: true }]);
   return { logo, canvas, motion, rafs, cleanup, resize, masks, dots, artwork,

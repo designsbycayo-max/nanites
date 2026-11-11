@@ -1,4 +1,4 @@
-# Particle logo
+# Nanites
 
 Move your cursor across an image to scatter its fragments into particles. They drift briefly, then spring back into place. Originally built for the Plainsight website.
 
@@ -13,19 +13,19 @@ npm ci
 npm run dev
 ```
 
-The demo includes sample artwork and a local image picker. Selected images stay in the browser; there is no upload endpoint or analytics. Transparent PNG, SVG and WebP files work best. The picker accepts images up to 5 MB, with aspect ratios from 1:2 to 20:1.
+The demo uses the Cayo logo from the portfolio and a local image picker. Selected images stay in the browser; there is no upload endpoint or analytics. Transparent PNG, SVG and WebP files work best. The picker accepts images up to 5 MB, with aspect ratios from 1:2 to 20:1.
 
 ## Usage
 
-Copy `src/particle-logo.tsx` and `src/particle-logo.css` into your React project. Requires React 18 or newer; the demo is tested with React 19.
+Copy `src/nanites.tsx` and `src/nanites.css` into your React project. Requires React 18 or newer; the demo is tested with React 19.
 
 ```tsx
-import { ParticleLogo } from './particle-logo';
-import './particle-logo.css';
+import { Nanites } from './nanites';
+import './nanites.css';
 
 export function Brand() {
   return (
-    <ParticleLogo
+    <Nanites
       src="/your-logo.svg"
       alt="Your brand"
       width={1000}
@@ -76,4 +76,4 @@ The included GitHub Pages workflow runs checks on pull requests and deploys only
 
 ## License
 
-Code and sample artwork are MIT licensed. The Plainsight name and branding are not licensed by this repository. The sample wordmark is generic; substitute artwork you have permission to use.
+The code is MIT licensed. The Cayo logo in `public/cayo-logo.svg` is included for this demo only and is not covered by the MIT license. The Cayo and Plainsight names and branding remain reserved. Substitute artwork you have permission to use in your own project.
