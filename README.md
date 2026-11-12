@@ -76,4 +76,4 @@ The included GitHub Pages workflow runs checks on pull requests and deploys only
 
 ## License
 
-The code is MIT licensed. The Cayo logo in `public/cayo-logo.svg` is included for this demo only and is not covered by the MIT license. The Cayo and Plainsight names and branding remain reserved. Substitute artwork you have permission to use in your own project.
+The code is MIT licensed. The Cayo logo in `public/cayo-logo.svg` is included for this demo only and is not covered by the MIT license. The Cayo name and branding remain reserved. Substitute artwork you have permission to use in your own project.
